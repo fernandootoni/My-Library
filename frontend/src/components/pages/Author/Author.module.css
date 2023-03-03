@@ -1,0 +1,14 @@
+.author_container {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.author_container h1 {
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+.author_container p {
+  width: 900px;
+  margin: 0 auto;
+}

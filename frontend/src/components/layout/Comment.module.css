@@ -1,0 +1,141 @@
+.comment_container {
+  background-color: rgb(225, 237, 238);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 2px solid rgb(127, 139, 148, 0.5);
+  box-shadow: 0px 0px 10px rgb(189, 189, 189);
+}
+
+.comment_container header {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-left: 1.5em;
+}
+
+.comment_container header img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.img {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.info_container {
+  border-right: 1px solid black;
+  padding: 0.5em 0.5em 0.5em 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info_container h2{
+  width: 140px;
+}
+
+.info_container span i {
+  font-size: 1.1em;
+}
+
+.info_container span {
+  font-size: 1.15em;
+}
+
+.comment_container main {
+  margin-left: 1em;
+  width: 100%;
+}
+
+.comment_container main h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+.comment_container main p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.comment_container form span {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.comment_container form span a{
+  font-size: 1.5em;
+  color: rgb(41, 41, 41);
+  transition: .4s;
+}
+
+.comment_container form span a:hover{
+  color: rgb(37, 212, 31);
+}
+
+.comment_container form button {
+  border: none;
+  font-size: 1.7em;
+  color: rgb(41, 41, 41);
+  margin: 0 0.5em;
+  background-color: transparent;
+  transition: .4s;
+}
+
+.comment_container form button:hover {
+  color: rgb(255, 32, 32);
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_container a {
+  text-decoration: none;
+  color: rgb(68, 68, 94);
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(88, 88, 131);
+  color: rgb(236, 236, 236);
+  box-shadow: 0px 0px 5px rgb(151, 151, 151);
+  transition: .5s;
+}
+
+.title_container a:hover {
+  background-color: rgb(83, 83, 122);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(88, 88, 88);
+}
+
+.comment_container form span {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.comment_container form span a{
+  font-size: 1.3em;
+  color: rgb(41, 41, 41);
+  transition: .4s;
+}
+
+.comment_container form span a:hover{
+  color: rgb(37, 212, 31);
+}

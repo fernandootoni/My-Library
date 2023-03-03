@@ -1,0 +1,13 @@
+.container {
+  min-height: 90.8vh;
+  padding: 1em 2em 3em;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1360px) {
+  .container {
+    min-height: 86.5vh;
+    max-width: 1150px;
+  }
+}

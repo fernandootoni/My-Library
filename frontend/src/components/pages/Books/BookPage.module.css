@@ -1,0 +1,213 @@
+.bookinfo_container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 4rem;
+  justify-content: space-around;
+}
+
+.bookinfo_container header img {
+  height: 700px;
+  margin-top: 1.5em;
+}
+
+.bookinfo_container main {
+  width: 600px;
+}
+
+.bookinfo_container main h1 {
+  font-size: 5rem;
+  margin-bottom: 1.3rem;
+  margin-top: 0.5em;
+}
+
+.bookinfo_container main p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(48, 48, 48);
+  margin: 1.2em 0 1em;
+
+}
+
+.bookinfo_container main div {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.bookinfo h3 {
+  color: rgb(53, 53, 53);
+}
+
+.bookinfo h3 a {
+  text-decoration: none;
+  font-size: 1.15em;
+  transition: .5s;
+  padding: 0.25em;
+  border-radius: 5px;
+  border: 1px solid rgb(44, 43, 51);
+  background-color: rgb(88, 88, 131);
+  color: rgb(233, 233, 233);
+  box-shadow: 0px 0px 5px rgb(151, 151, 151);
+  margin-left: 0.2em;
+}
+
+.bookinfo h3 a:hover {
+  background-color: rgb(78, 78, 116);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(104, 104, 104);
+}
+
+.comment_form {
+  width: 800px;
+  margin: 4em auto;
+}
+
+.comment_form h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(50, 44, 65);
+  margin: 1em 0 1em;
+  padding: 1em 0 0 0;
+  border-top: 1px solid rgb(50, 44, 65);
+}
+
+.comment_form h1 {
+  text-align: center;
+  font-size: 5em;
+  color: rgb(50, 44, 65);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.comment_form a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.comment_form a h3 {
+  font-size: 3em;
+  color: rgb(51, 47, 61);
+}
+
+.comment_form a h3 span {
+  color: rgb(51, 47, 61);
+}
+
+.comment_form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment_form form input {
+  font-size: 1.4em;
+  padding: 0.2em;
+  border: none;
+  border-bottom: 1px solid rgb(149, 148, 151);
+  margin: 0.2em 0;
+  transition: .4s;
+}
+
+.comment_form form input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(45, 45, 61);
+}
+
+.comment_form form input[type='submit'] {
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 0.5em;
+  background-color: rgb(88, 88, 131);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: .5s;
+  box-shadow: 0px 0px 10px rgb(150, 150, 150);
+  margin-top: 1em;
+}
+
+.comment_form form input[type='submit']:hover {
+  background-color: rgb(53, 53, 90);
+  color: white;
+}
+
+.comment_form form textarea {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 0.3em;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 8px;
+  transition: .4s;
+  margin-top: 1em;
+}
+
+.comment_form form textarea:focus {
+  outline: none;
+  border: 1px solid rgb(42, 42, 56);
+}
+
+.comment_section_header h2 {
+  text-align: center;
+  font-size: 4em;
+  color: rgb(50, 44, 65);
+
+  margin: 1em 0 0.8em;
+  padding: 0.6em 0 0 0;
+  border-top: 1px solid rgb(50, 44, 65);
+}
+
+.comment_section_header h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 1360px) {
+  .bookinfo_container {
+    margin-top: 0.7rem;
+  }
+  
+  .bookinfo_container header img {
+    height: 500px;
+  }
+  
+  .bookinfo_container main {
+    width: 600px;
+  }
+  
+  .bookinfo_container main h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bookinfo_container main p {
+    font-size: 1.4rem;
+    margin: 1em 0 1em;
+  }
+  
+  .bookinfo_container main div {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .bookinfo h3 {
+    color: rgb(53, 53, 53);
+  }
+  
+  .comment_form {
+    width: 800px;
+    margin: 2em auto;
+  }
+  
+  .comment_form h2 {
+    margin: 1em 0 0.8em;
+  }
+  
+  .comment_form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment_form form textarea {
+    height: 180px;
+  }
+}
