@@ -13,4 +13,4 @@ Here you can create your account and login
 ![Signup](https://user-images.githubusercontent.com/102544229/222783657-900202f6-8bd3-4a44-a748-5ec749ffe7e7.jpg)
 
 #Dashboard
-![Books](https://user-images.githubusercontent.com/102544229/222784153-4fa8bad4-d790-456e-87bd-1d1ddde87a09.jpg)
+![Books](https://user-images.githubusercontent.com/102544229/222784652-2b6bd2e7-2211-4cd6-957a-64167fc7e108.jpg)
