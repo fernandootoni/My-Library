@@ -27,7 +27,7 @@ This section is where we can see all the books registered on the site, search fo
 
 On the book's page we can see information about the book, rating and create new comments giving their due evaluation while we can also see comments from other users
 
-![BookPage](https://user-images.githubusercontent.com/102544229/222792688-24857576-3832-44ca-b8e0-83692efaee78.jpg)
+![BookPage](https://user-images.githubusercontent.com/102544229/222797016-fa18ddf7-c857-4a28-ba40-3be12aca9f1b.jpg)
 
 # Author page
 
