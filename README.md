@@ -17,3 +17,7 @@ Here you can create your account and login
 This section is where we can see all the books registered on the site, search for a specific book and see the rating and genre of each one.
 
 ![Books](https://user-images.githubusercontent.com/102544229/222784652-2b6bd2e7-2211-4cd6-957a-64167fc7e108.jpg)
+![Search](https://user-images.githubusercontent.com/102544229/222785293-f81c7773-91d9-4b17-a46a-0e8a87f02cfd.jpg)
+![AddBook](https://user-images.githubusercontent.com/102544229/222785397-2786ecae-bb9c-4983-8deb-18f6f88df46a.jpg)
+
+# 
