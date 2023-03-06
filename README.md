@@ -33,7 +33,7 @@ On the book's page we can see information about the book, rating and create new 
 
 Here we can see all books by the selected author
 
-![AuthorPage](https://user-images.githubusercontent.com/102544229/222789684-6e6fa5c1-5c68-49e0-9a9b-1ae31f7a7fb1.jpg)
+![AuthorPage](https://user-images.githubusercontent.com/102544229/223095923-a1072457-b4a6-4ab9-8d16-6cafcb68eb99.jpg)
 
 # Perfil
 
@@ -41,5 +41,3 @@ Profile is where we see all comments created by the user and where we can edit y
 
 ![Perfil](https://user-images.githubusercontent.com/102544229/223095290-4fe630d1-f037-47a0-99b4-a906dd856acb.jpg)
 ![PerfilEdit](https://user-images.githubusercontent.com/102544229/222790000-2f6a7c18-8bd1-4e6a-9b8d-8cf732df523a.jpg)
-
-
