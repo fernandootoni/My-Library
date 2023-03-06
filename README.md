@@ -38,6 +38,8 @@ Here we can see all books by the selected author
 # Perfil
 
 Profile is where we see all comments created by the user and where we can edit your information
+![Perfil](https://user-images.githubusercontent.com/102544229/223100159-d17797ee-2e3e-4fc4-9db9-68af6e86b78e.jpg)
+![PerfilEdit](https://user-images.githubusercontent.com/102544229/223100185-144227f9-3a37-4cec-ae99-c3828dacdf41.jpg)
 
-![Perfil](https://user-images.githubus![PerfilEdit](https://user-images.githubusercontent.com/102544229/223099985-bfb84b8d-c1e3-482d-97b7-1bdfcada17b4.jpg)
-![Uploading PerfilEdit.jpg…]()
+
+
