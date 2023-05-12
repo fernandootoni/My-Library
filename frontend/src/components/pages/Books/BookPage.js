@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import api from '../../../utils/api'
 import Comment from '../../layout/Comment'
 import styles from './BookPage.module.css'
+import { useNavigate } from 'react-router-dom'
 
 import useFlashMessage from '../../../hooks/useFlashMessage'
 
@@ -15,43 +16,41 @@ function BookPage() {
   const [user, setUser] = useState({})
   const [logged, setLogged] = useState(true)
   const { setFlashMessage } = useFlashMessage() 
+  const navigate = useNavigate()
 
   let msgType = 'success'
 
   useEffect(() => {
-    try {
-      api.get(`books/${id}`)
-      .then((response) => {
-        setBook(response.data)
-        return response.data
-      })
-
-      if(token === ''){
-        setLogged(false)
-      } else {
-        api.get('users/checkuser', {
-          headers: {
-            Authorization: `Bearer ${JSON.parse(token)}`,
-            Accept: 'multipart/form-data'
-          }
-        })
-        .then((response) => {
-          setUser(response.data)
-          return response.data
-        })
-      }
-
-      api.get(`comments/bybook/${id}`)
-      .then((response) => {
-        setComments(response.data.allComments)
-        return response.data.allComments
-      })
-    } catch (error) { 
-      console.log(error) 
+    async function loadBookById(){
+      const response = await api.get(`books/${id}`)
+      setBook(response.data)
     }
+
+    async function checkUser() {
+      const response = await api.get('users/checkuser', {
+        headers: {
+          Authorization: `Bearer ${JSON.parse(token)}`,
+          Accept: 'multipart/form-data'
+        }
+      })
+
+      setUser(response.data)
+    }
+
+    async function getAllComments() {
+      const response = await api.get(`comments/bybook/${id}`)
+      setComments(response.data.allComments)
+    }
+
+    loadBookById()
+    getAllComments()
+    if(token === '')
+      checkUser()
+      
   }, [token, id])
 
   async function createComment(e) {
+    e.preventDefault()
     msgType = 'success'
 
     const data = await api.post('comments/add', comment, {
@@ -62,6 +61,7 @@ function BookPage() {
       return error.response.data 
     })
 
+    // navigate(`/books/${id}`)
     setFlashMessage(data.message, msgType)
   }
 
@@ -92,10 +92,11 @@ function BookPage() {
           <h1>{book.name}</h1>
           <h3>Created by <a href={`/author/${book.author_id}`}>{book.author}</a></h3>
           <p>{book.description}</p>
-          <div><i class="bi bi-star"></i><span> {book.rating}</span>/10</div>
+          <div><i class="bi bi-star"></i><span> {Math.round(book.rating * 100)/100}</span>/10</div>
           <div><i class="bi bi-book"></i> {book.pages}</div>
         </main>
       </section>
+
       {logged === true ? (
         <section className={styles.comment_form}>
           <h2>Leave your comment here!</h2>
@@ -114,6 +115,7 @@ function BookPage() {
           </a>
         </section>
       )}
+
       <section className={styles.comment_section}>
         <header className={styles.comment_section_header}>
           <h2>All coments</h2>

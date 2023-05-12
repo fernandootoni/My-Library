@@ -1,8 +1,10 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 6rem;
   align-items: center;
-  margin: 6em 0;
+  margin-top: 5rem;
+  margin-bottom: 3.05rem;
 }
 
 .container header {
@@ -11,8 +13,8 @@
 }
 
 .container header img{
-  width: 350px;
-  height: 500px;
+  width: 550px;
+  height: 750px;
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 5px;
@@ -24,9 +26,19 @@
   border-bottom: 1px solid rgb(180, 180, 180);
 }
 
+.container main {
+  margin-bottom: 5rem;
+}
+
 .container main h1 {
   font-size: 2.5em;
-  margin-bottom: 0.8em;
+  margin: 1rem auto 2rem;
+  
+  background: black;
+  color: white;
+  width: 480px;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .container main form input {
@@ -50,18 +62,51 @@
   text-decoration: none;
   font-size: 1.6em;
   font-weight: bold;
-  padding: 0.5em;
-  background-color: rgb(88, 88, 131);
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  transition: .5s;
-  box-shadow: 0px 0px 10px rgb(150, 150, 150);
-  border: none;
+  margin: auto;
+  width: 150px;
+  
   margin-top: 1em;
+  margin-left: 14.4rem;
+
+  background-color: rgb(0, 0, 0);
+  padding: 0.5em;
+  color: rgb(255, 255, 255);
+
+  border-radius: 5px;
+  border: none;
+  transition: .5s;
 }
 
 .register_container input[type="submit"]:hover {
-  background-color: rgb(53, 53, 90);
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.register_container input[type="button"] {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.buttons_container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.buttons_container button {
+  font-size: 1.3rem;
+  margin: 0.25rem;
+  padding: 0.4rem;
+}
+
+.selected {
+  background-color: Black;
+  color: white;
+}
+
+.not-selected {
+  background-color: white;
+  color: black;
 }
 
 @media screen and (max-width: 1360px) {

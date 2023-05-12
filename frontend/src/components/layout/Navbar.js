@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Link to='/' className={styles.navbar_logo}>
-        <img src={Logo} alt="My library" />
+        {/* <img src={Logo} alt="My library" /> */}
         <h2>My Library.</h2>
       </Link>
       <Message/>

@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 10rem;
+  margin-bottom: 16.4rem;
   gap: 4rem;
 }
 
@@ -14,6 +15,10 @@
 .home_container header h1{
   font-size: 7em;
   margin-bottom: 0.3em;
+}
+
+.home_container header h1 span {
+  color: black;
 }
 
 .home_container header p{

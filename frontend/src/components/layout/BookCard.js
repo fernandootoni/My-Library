@@ -7,7 +7,7 @@ function BookCard({name, author, authorId, rating, pages, image, id, category}) 
         <div>
           <img src={image} alt="" />
         </div>
-        {name?.length > 30 ? (
+        {name?.length > 23 ? (
           <div className={styles.booknameLong}>
             <h2>{name}</h2>
           </div>

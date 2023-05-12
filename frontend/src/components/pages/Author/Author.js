@@ -36,6 +36,7 @@ function Author() {
       <section className={stylesAuthor.author_container}>
         <img src="" alt="" />
         <h1>{author.name}</h1>
+        <h2>{author.description}</h2>
       </section>
       <section>
         <div className={styles.books_container}>
@@ -49,6 +50,7 @@ function Author() {
             authorId={id}
             rating={Math.round(book.rating * 100)/100}
             pages={book.pages}
+            category={book.category}
           />
           ))}
         </div>

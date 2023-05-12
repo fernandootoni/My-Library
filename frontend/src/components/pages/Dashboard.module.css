@@ -1,114 +1,127 @@
 .header_container {
   text-align: center;
+  margin: 3rem 0 4rem;
 }
 
-.header_container h1 {
-  font-size: 5em;
-  margin-top: 0.5em;
-}
-
-.header_container p {
+.header {
   font-size: 2em;
 }
 
-.header_container main {
+.header_main {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2em;
-  margin-bottom: 4em;
-}
-
-.header_container main form {
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(183, 210, 233);
-}
-
-.header_container main input:focus {
-  outline: none;
-  border-bottom: 1px solid rgb(39, 39, 77);
-}
-
-.header_container main a,
-.header_container main input[type="submit"] {
-  text-decoration: none;
-  font-size: 1.6em;
-  font-weight: bold;
-  padding: 0.5em;
-  background-color: rgb(88, 88, 131);
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  transition: .5s;
-  box-shadow: 0px 0px 10px rgb(150, 150, 150);
-}
-
-.header_container main a:hover,
-.header_container main input[type="submit"]:hover {
-  background-color: rgb(53, 53, 90);
-}
-
-.header_container main input {
-  font-size: 1.3em;
-  font-weight: bold;
-  width: 400px;
-  border: none;
-  padding: 0.2em 0.2em;
-  border-bottom: 1px solid rgb(180, 180, 180);
-}
-
-.header_container main input:focus {
-  outline: none;
-  border-bottom: 1px solid rgb(39, 39, 77);
-}
-
-.header_container main input[type="submit"] {
-  font-size: 1.3em;
-  align-self: center;
-  width: 100px;
-  border-bottom: 1px solid transparent;
-}
-
-.books_container {
   justify-content: center;
-  display: grid;
-  width: 100%;
-  grid-gap: 50px;
-  grid-template-columns: repeat(auto-fit, 197px);
+  align-items: center;
+  gap: 2rem;
 }
 
-@media screen and (max-width: 1360px) {
-  .header_container h1 {
-    font-size: 4em;
-    margin-top: 0.4em;
-  }
-  
-  .header_container p {
-    font-size: 1.8em;
-  }
-  
-  .header_container main input:focus {
-    outline: none;
-    border-bottom: 1px solid rgb(0, 0, 255);
-  }
+.header_main input[type="text"] {
+  width: 400px;
 
-  .header_container main input:focus {
-    outline: none;
-    border-bottom: 1px solid rgb(39, 39, 77);
-  }
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.65rem;
   
-  .header_container main input[type="submit"] {
-    font-size: 1.3em;
-    align-self: center;
-    width: 100px;
-    border-bottom: 1px solid transparent;
-  }
+  border: 1px solid black;
+  border-radius: 3px 0px 0px 3px;
   
-  .books_container {
-    justify-content: center;
-    display: grid;
-    width: 100%;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, 197px);
-  }
+  transition: .5s;
+}
+
+.header_main input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(39, 39, 77);
+  color: rgb(2, 2, 2);
+}
+
+.header_main a,
+.header_main input[type="submit"] {
+  font-size: 1.2em;
+  text-decoration: none;
+  
+  padding: 0.5em;
+  
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: rgb(0, 0, 0);
+  
+  transition: .3s;
+}
+
+.header_main a:hover,
+.header_main input[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: white;
+}
+
+.header_main input[type="submit"] {
+  width: 100px;
+}
+
+.genres_button {
+  margin-top: 2rem;
+
+}
+
+.genres_button a {
+  text-decoration: none;
+  color: white;
+
+  padding: 0.3rem;
+  margin: 0.4rem;
+  border-radius: 3px;
+
+  background-color: black;
+  transition: 0.3s;
+}
+
+.genres_button a:hover {
+  color: rgb(8, 8, 8);
+  background-color: rgb(255, 255, 255);
+}
+
+/* ////////////////// Book Container /////////////////// */
+
+.books_header {
+  text-align: center;
+  padding: 5rem;
+}
+
+.books_header h2,
+.genre_name {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  filter: brightness(150%);
+  filter: contrast(100%);
+}
+
+.genre_name {
+  margin: 3rem 0 4rem;
+}
+
+.books_header a {
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  padding: 0.5rem;
+  border-radius: 3px;
+
+  color: white;
+  background-color: black;
+}
+
+.books_container{
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 10px 33px;
+  padding: 1rem 2.1rem 1rem 1rem;
+
+  justify-content: center;
+}
+
+.footer_margin {
+  margin-bottom: 22.2rem;
 }

@@ -4,8 +4,13 @@
 }
 
 .author_container h1 {
-  font-size: 3em;
+  font-size: 5em;
+  margin-bottom: 0.6em;
+}
+
+.author_container h2 {
   margin-bottom: 2em;
+  color: rgb(56, 67, 77);
 }
 
 .author_container p {

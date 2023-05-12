@@ -16,6 +16,7 @@ import Author from './components/pages/Author/Author';
 import EditPerfil from './components/pages/EditPerfil';
 import Perfil from './components/pages/Perfil';
 import EditComment from './components/pages/EditComment';
+import Genres from './components/pages/Genres';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Navbar/>
           <Container>
             <Routes>
+              <Route path='/books/genre/:genre' element={<Genres/>}/>
               <Route path='/books/:id' element={<BookPage/>}/>
               <Route path='/author/:id' element={<Author/>}/>
               <Route path='/dashboard' element={<Dashboard/>}/>

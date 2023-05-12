@@ -1,0 +1,75 @@
+.content_shows {
+  display: flex;
+  flex-wrap: wrap;
+
+  
+  border-radius: 6px;
+  width: 220px;
+}
+
+.content_shows div {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.content_shows div:hover img {
+  transform: scale(1.15);
+}
+
+.content_shows div .title_box {
+  content: "";
+  height: 100px;
+  position: absolute;
+  transform: translateY(50px);
+  transition: 0.3s ease;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom, rgba(0,0,0,0), black);
+  width: 100%;
+  z-index: 1;
+}
+
+.content_shows div img {
+  object-fit: cover;
+  height: 330px;
+  width: 220px;
+  transition: 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.content_shows div img:hover {
+  filter: brightness(1.1);
+}
+
+.content_shows div .name {
+  position: absolute;
+  width: 100%;
+
+  bottom: 10px;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+
+  transform: translateY(80px);
+  z-index: 10;
+  transition: .3s ease;
+  cursor: default;
+}
+
+
+.content_shows div .name div{
+  font-size: 0.8rem;
+}
+
+.content_shows div .name div i{
+  color: rgb(255, 251, 0);
+}
+
+.content_shows div:hover .name,
+.content_shows div:hover .title_box {
+  transform: translateY(0);
+}

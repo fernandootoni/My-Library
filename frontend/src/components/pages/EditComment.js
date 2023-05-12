@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom"
 import api from "../../utils/api"
 import styles from './Books/BookPage.module.css'
 import useFlashMessage from "../../hooks/useFlashMessage"
+import { useNavigate } from 'react-router-dom'
+
 
 function EditComment() {
   const {id} = useParams()
@@ -10,6 +12,7 @@ function EditComment() {
   const [comment, setComment] = useState({})
   const [newComment, setNewComment] = useState({})
   const { setFlashMessage } = useFlashMessage()
+  const navigate = useNavigate()
 
   useEffect(() => {
     api.get(`/comments/${id}`, {
@@ -45,6 +48,7 @@ function EditComment() {
       return error.response.data
     })
 
+    navigate(`/books/${comment.bookId}`)
     setFlashMessage(data.message, msgType)
   }
 
