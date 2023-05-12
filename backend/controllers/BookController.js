@@ -98,4 +98,12 @@ module.exports = class BookController {
     
     res.status(200).json(book)
   }
+
+  static async getBookByGenre(req, res) {
+    const { genre } = req.params
+
+    const booksByGenre = await Book.find({category: genre})
+    
+    res.status(200).json(booksByGenre)
+  }
 }
